@@ -1,24 +1,15 @@
-# vue3001
+# 포트폴리오
 
-## Project setup
-```
-npm install
-```
+## VUE CLI 설치
+npm instal -g @vue/cli;
 
-### Compiles and hot-reloads for development
-```
+## VUE 폴더 생성
+vue create vue3000;
+
+## yarn 설치
+npm i -g yarn;
+
+## VUE 시작
 npm run serve
-```
+yarn run serve
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
