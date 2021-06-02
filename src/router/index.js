@@ -1,24 +1,47 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Main from "../views/main.vue";
+import About from "../views/about.vue";
+import Reference from "../views/reference.vue";
+import Youtube from "../views/youtube.vue";
+import Script from "../views/script.vue";
+import Contact from "../views/contact.vue";
+import Portfolio from "../views/portfolio.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home,
+    name: "Main",
+    component: Main,
   },
   {
     path: "/about",
     name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    component: About,
+  },{
+    path: "/reference",
+    name: "Reference",
+    component: Reference,
+  },{
+    path: "/youtube",
+    name: "Youtube",
+    component: Youtube,
+  },{
+    path: "/script",
+    name: "Script",
+    component: Script,
   },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Contact,
+  },{
+    path: "/portfolio",
+    name: "Portfolio",
+    component: Portfolio,
+  }
 ];
 
 const router = new VueRouter({
